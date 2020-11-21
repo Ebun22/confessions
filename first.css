@@ -1,0 +1,344 @@
+:root{
+  --padding: 3%;
+}
+*{
+  margin: 0;
+  font-family: 'Arimo', sans-serif;
+}
+.icon{
+  color: #fff;
+  padding-right: 9px;
+}
+form span{
+  margin-left: 50px;
+}
+body, html{
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+p{
+  color: white;
+}
+a, ul li, ul{
+  text-decoration: none;
+  list-style: none;
+}
+.mobile-nav, .side-nav, .top-bar, .top-nav2,{
+  width: 0%;
+  height: 0%;
+  display: none;
+}
+header{
+  background-color:#000;
+  width: 100%;
+  position: fixed;
+  margin-bottom: 30px;
+  box-shadow: 0px 3px 9px #131212;
+}
+.inner-header{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-top: 20px;
+  padding-left: var(--padding);
+  padding-right: var(--padding);
+}
+.header{
+  color:#db0e87;
+  font-size: 30px;
+  width: 30%;
+  padding-bottom: 15px;
+  font-family: 'Lobster', cursive !important;
+}
+.top-nav > *, .inner-footer div{
+  display: inline-block;
+}
+.sections a{
+  padding:23px 4.3%;
+  color: #fff;
+}
+.sections a:hover{
+  border-bottom:3px solid #db0e87 ;
+}
+.sections{
+  margin-left: -330px;
+  width:60%;
+}
+form input#search{
+  width: 230px;
+  height: 32px;
+  background-color: #171315;
+  border: none;
+  margin-left: 10px;
+  border-bottom: 1px solid #f90494;
+  padding-left: 8px;
+  color: #fff;
+}
+.sign{
+  float: right;
+}
+.sign p{
+  display: inline-block;
+  padding: 7px;
+  margin-left: 7px;
+  background-color: #f70393;
+  border-radius: 5%;
+  color: #141414;
+  transition: All .50s ease-in-out;
+}
+.sign p:hover{
+  cursor: pointer;
+  background-color: #b90961;
+  color: #fff;
+  transition: All .55s ease-in-out;
+}
+main{
+  padding: 50px var(--padding);
+  background-color: #171315;
+  margin-top: 70px;
+}
+.thought{
+  margin-bottom: 25px;
+  background-color: #800d43;/*#691c40;/*#a30951;*/
+  border-radius: 7px;
+}
+.inner-thoughts{
+  padding: 20px;
+}
+.inner-thoughts>p{
+  padding-left: 7px;
+}
+.time{
+  color: #a3a0a2;
+  padding-left: 0px !important;
+}
+.title{
+  color: #fff;
+  font-size: 30px;
+  padding-bottom: 15px;
+}
+.signature{
+  text-align: right;
+  margin: 10px 5px;
+}
+.inner-thoughts ul{
+  border-top: 1px solid #474646;
+  margin-top: 16px;
+  padding-top: 10px;
+  text-align: center;
+}
+ .inner-thoughts>ul li{
+   display: inline-block;
+   color: #c3bec1;
+   text-align: center;
+   padding: 0px 7%;
+ }
+footer{
+  background: #000;
+}
+.inner-footer{
+  padding:25px var(--padding);
+}
+.inner-footer div{
+  display: inline-block;
+}
+.head{
+  color: #fff;
+  font-size:1.5em;
+}
+.inner-footer div ul a li{
+  color: #fff;
+  padding: 10px 0px;
+}
+.nav{
+  padding:55px;
+}
+.socials{
+  float: right;
+}
+.end{
+  text-align: center;
+  color: #c4bfc2;
+}
+.inner-footer div ul a li:hover{
+  color: #db0e87;
+}
+.opacity{
+  height: 100%;
+  width: 100%;
+  padding-bottom: 970px;
+  top:0;
+  position: absolute;
+  background-color: rgba(21, 21, 21, 0.5);
+  transition: 0.7s;
+}
+.opacity2{
+  height: 100%;
+  width: 100%;
+  padding-bottom: 970px;
+  top:0;
+  position: absolute;
+  background-color: rgba(21, 21, 21, 0.7);
+  transition: 0.7s;
+}
+.signin, .login{
+  display: none;
+  opacity: 0;
+}
+.view{
+    opacity: 0;
+    transition: All .50s ease-in-out;
+}
+.clear{
+  opacity: 1;
+  transition: All .50s ease-in-out;
+}
+.user-details{
+  text-align: center;
+  background: #000;
+  width: 300px;
+  padding: 40px 40px 0px 40px;
+  position: fixed;
+  margin-left: 33.8%;
+  margin-top: 16.2%;
+  z-index: 1;
+  border-radius: 7px;
+  box-shadow: 3px 3px 10px #222122;
+}
+.user-details form input{
+    background-color: transparent;
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    padding-left: 10px;
+    color: #fff;
+}
+.label p{
+  margin-top: 40px;
+}
+label p{
+  padding-bottom: 10px;
+    font-size: 1.3em;
+}
+.user-details h3{
+  text-align: center;
+  font-size: 0.8em;
+  padding-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+[class*="submit-"]{
+  float: right;
+  background-color: #f70393;
+  border: none;
+  margin-top: 25px;
+  padding: 10px;
+  border-radius: 7%;
+  color: #fff;
+  transition: All .50s ease-in-out;
+}
+ .side-nav{
+   display: none;
+ }
+@media screen and (max-width: 700px) {
+  .mobile{
+    display: block;
+  }
+  .top-nav{
+    display: none;
+  }
+
+  form span{
+    margin-left: 0px;
+  }
+    .hamburger {
+      float: right;
+      justify-self: end;
+      margin-right:9px;
+      margin-right: 28px;
+      height: 100%;
+      width: 20px;
+    }
+    .hamburger div{
+      width: 20px;
+      height: 2px;
+      margin: 6px;
+      background-color: #fff;
+    }
+      .mobile-nav > *{
+        display: block;
+      }
+  .side-nav{
+      display: none;
+      padding: var(--padding) 4.5%;
+      overflow-y: hidden;
+      background-color: #000;
+      position: fixed;
+      z-index: 2;
+      height: 100%;
+      display:block;
+      float: left;
+      width: 0%;
+      opacity: 0;
+      margin-left: 40.59%;
+      border-left:1pt solid #fc1f82;
+      transition: All .55s ease-in-out;
+    }
+    .view{
+      opacity: 1;
+      transition: All .55s ease-in-out;
+    }
+    .top-bar > .header{
+      font-size: 14pt;
+      display: inline-block;
+    }
+      .top-nav2{
+        width: 100%;
+        display: block;
+        border-top: 1px solid #FFF;
+      }
+      .top-nav2 a{
+        text-align: center;
+        display: block;
+        color: #fff;
+        padding: 15px 0px;
+        font-size: 1.1em;
+      }
+      .top-nav2 .nav{
+        padding-top: 10px;
+        border-top: 1px solid #FFF;
+      }
+      .top-nav2 .nav .head{
+        display: none;
+      }
+      .top-bar > span{
+        color: white;
+        font-size: 22pt;
+        float: right;
+      }
+      .top-nav2 form input#search{
+        margin: 10px 0px;
+        /margin-left: 10px;
+        margin-bottom: 25px;
+        background-color: #0b090a;
+        border: none;
+        border-bottom: 1px solid #f90494;
+        padding-left: 8px;
+        width: 179px;
+        color: #fff;
+      }
+      .top-nav2 .sign{
+        width: 100%;
+      }
+      .top-nav2 .sign p{
+        margin-left: 0px;
+        margin: 15px 0;
+        float: none;
+        border-radius: 5px;
+        display: block;
+        text-align: center;
+      }
+      .user-details{
+        margin-left: 53px;
+      }
+}
